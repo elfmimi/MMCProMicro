@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ShiroMicro"
-Date "2018-08-17"
-Rev "A"
+Date "2018-08-19"
+Rev "B"
 Comp "a_p_u_r_o@elfmimi"
 Comment1 ""
 Comment2 ""
@@ -390,17 +390,6 @@ Wire Wire Line
 	1900 3200 1900 2700
 Wire Wire Line
 	1900 2700 2600 2700
-$Comp
-L Device:Crystal_GND2 X1
-U 1 1 5B785FA3
-P 1100 3400
-F 0 "X1" H 1100 3668 50  0000 C CNN
-F 1 "Crystal_GND2" H 1100 3577 50  0000 C CNN
-F 2 "proj_local:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering" H 1100 3400 50  0001 C CNN
-F 3 "~" H 1100 3400 50  0001 C CNN
-	1    1100 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1100 3600 1100 3950
 Wire Wire Line
@@ -408,12 +397,8 @@ Wire Wire Line
 Connection ~ 1900 3950
 Text GLabel 1400 3400 2    50   Input ~ 0
 XTAL2
-Wire Wire Line
-	1250 3400 1400 3400
 Text GLabel 800  3400 0    50   Input ~ 0
 XTAL1
-Wire Wire Line
-	800  3400 950  3400
 Text GLabel 3300 2300 0    50   Input ~ 0
 XTAL1
 Text GLabel 3300 2500 0    50   Input ~ 0
@@ -717,23 +702,23 @@ UCAP
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5B8BC0D0
-P 7300 1750
-F 0 "TP1" H 7358 1870 50  0000 L CNN
-F 1 "TestPoint" H 7358 1779 50  0000 L CNN
-F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7500 1750 50  0001 C CNN
-F 3 "~" H 7500 1750 50  0001 C CNN
-	1    7300 1750
+P 7350 1200
+F 0 "TP1" H 7408 1320 50  0000 L CNN
+F 1 "TestPoint" H 7408 1229 50  0000 L CNN
+F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 1200 50  0001 C CNN
+F 3 "~" H 7550 1200 50  0001 C CNN
+	1    7350 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5B8BFFD7
-P 7300 2200
-F 0 "TP2" H 7358 2320 50  0000 L CNN
-F 1 "TestPoint" H 7358 2229 50  0000 L CNN
-F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7500 2200 50  0001 C CNN
-F 3 "~" H 7500 2200 50  0001 C CNN
-	1    7300 2200
+P 7350 1650
+F 0 "TP2" H 7408 1770 50  0000 L CNN
+F 1 "TestPoint" H 7408 1679 50  0000 L CNN
+F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 1650 50  0001 C CNN
+F 3 "~" H 7550 1650 50  0001 C CNN
+	1    7350 1650
 	1    0    0    -1  
 $EndComp
 Text GLabel 4750 2100 2    50   Output ~ 0
@@ -744,16 +729,48 @@ Text GLabel 4750 3800 2    50   Output ~ 0
 PD5
 Wire Wire Line
 	4600 3800 4750 3800
-Text GLabel 7050 1900 0    50   Input ~ 0
+Text GLabel 7100 1350 0    50   Input ~ 0
 PB0
 Wire Wire Line
-	7300 1900 7300 1750
+	7350 1350 7350 1200
 Wire Wire Line
-	7050 1900 7300 1900
-Text GLabel 7050 2400 0    50   Input ~ 0
+	7100 1350 7350 1350
+Text GLabel 7100 1850 0    50   Input ~ 0
 PD5
 Wire Wire Line
-	7050 2400 7300 2400
+	7100 1850 7350 1850
 Wire Wire Line
-	7300 2400 7300 2200
+	7350 1850 7350 1650
+$Comp
+L Device:Resonator X1
+U 1 1 5B775AC8
+P 1100 3400
+F 0 "X1" H 1100 3648 50  0000 C CNN
+F 1 "Resonator" H 1100 3557 50  0000 C CNN
+F 2 "proj_local:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering_Compact" H 1075 3400 50  0001 C CNN
+F 3 "~" H 1075 3400 50  0001 C CNN
+	1    1100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3400 1400 3400
+Wire Wire Line
+	950  3400 800  3400
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5B7834BD
+P 7350 2150
+F 0 "TP3" H 7408 2270 50  0000 L CNN
+F 1 "TestPoint" H 7408 2179 50  0000 L CNN
+F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 2150 50  0001 C CNN
+F 3 "~" H 7550 2150 50  0001 C CNN
+	1    7350 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 2350 0    50   BiDi ~ 0
+GND
+Wire Wire Line
+	7100 2350 7350 2350
+Wire Wire Line
+	7350 2150 7350 2350
 $EndSCHEMATC
