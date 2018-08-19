@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "ShiroMicro"
 Date "2018-08-19"
-Rev "B"
+Rev "C"
 Comp "a_p_u_r_o@elfmimi"
 Comment1 ""
 Comment2 ""
@@ -219,7 +219,7 @@ U 1 1 5B747838
 P 2400 1100
 F 0 "D1" H 2400 884 50  0000 C CNN
 F 1 "D_Schottky" H 2400 975 50  0000 C CNN
-F 2 "proj_local:D_0603_HandSoldering" H 2400 1100 50  0001 C CNN
+F 2 "proj_local:D_TUMD2_HandSoldering" H 2400 1100 50  0001 C CNN
 F 3 "~" H 2400 1100 50  0001 C CNN
 	1    2400 1100
 	-1   0    0    1   
@@ -773,4 +773,19 @@ Wire Wire Line
 	7100 2350 7350 2350
 Wire Wire Line
 	7350 2150 7350 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5B791FEC
+P 5400 4400
+F 0 "#PWR?" H 5400 4150 50  0001 C CNN
+F 1 "GND" H 5405 4227 50  0000 C CNN
+F 2 "" H 5400 4400 50  0001 C CNN
+F 3 "" H 5400 4400 50  0001 C CNN
+	1    5400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4200 5400 4200
+Wire Wire Line
+	5400 4200 5400 4400
 $EndSCHEMATC
