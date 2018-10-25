@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ShiroMicro"
-Date "2018-08-19"
-Rev "C"
+Date "2018-10-18"
+Rev "D"
 Comp "a_p_u_r_o@elfmimi"
 Comment1 ""
 Comment2 ""
@@ -65,9 +65,9 @@ $Comp
 L Device:R R2
 U 1 1 5B6F6EA8
 P 2000 1450
-F 0 "R2" V 1793 1450 50  0000 C CNN
-F 1 "5.1k" V 1884 1450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 1930 1450 50  0001 C CNN
+F 0 "R2" V 1900 1450 50  0000 C CNN
+F 1 "5.1k" V 2000 1450 50  0000 C CNN
+F 2 "proj_local:R_0603_HandSoldering" V 1930 1450 50  0001 C CNN
 F 3 "~" H 2000 1450 50  0001 C CNN
 	1    2000 1450
 	0    1    1    0   
@@ -76,9 +76,9 @@ $Comp
 L Device:R R1
 U 1 1 5B6F6ED4
 P 2000 1550
-F 0 "R1" V 2207 1550 50  0000 C CNN
-F 1 "5.1k" V 2116 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 1930 1550 50  0001 C CNN
+F 0 "R1" V 1900 1550 50  0000 C CNN
+F 1 "5.1k" V 2000 1550 50  0000 C CNN
+F 2 "proj_local:R_0603_HandSoldering" V 1930 1550 50  0001 C CNN
 F 3 "~" H 2000 1550 50  0001 C CNN
 	1    2000 1550
 	0    1    -1   0   
@@ -107,9 +107,9 @@ $Comp
 L MCU_Microchip_ATmega:ATmega32U4-AU U1
 U 1 1 5B740F3A
 P 4000 3600
-F 0 "U1" H 4000 1714 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 4000 1623 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 4000 3600 50  0001 C CIN
+F 0 "U1" H 4000 3650 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 4000 3525 50  0000 C CNN
+F 2 "proj_local:TQFP-44_10x10mm_P0.8mm" H 4000 3600 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 4000 3600 50  0001 C CNN
 	1    4000 3600
 	1    0    0    -1  
@@ -129,9 +129,9 @@ $Comp
 L Device:R R3
 U 1 1 5B741CEB
 P 2250 1800
-F 0 "R3" V 2043 1800 50  0000 C CNN
-F 1 "22" V 2134 1800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2180 1800 50  0001 C CNN
+F 0 "R3" V 2150 1800 50  0000 C CNN
+F 1 "22" V 2250 1800 50  0000 C CNN
+F 2 "proj_local:R_0603_HandSoldering" V 2180 1800 50  0001 C CNN
 F 3 "~" H 2250 1800 50  0001 C CNN
 	1    2250 1800
 	0    1    1    0   
@@ -140,9 +140,9 @@ $Comp
 L Device:R R4
 U 1 1 5B741CF1
 P 2250 1900
-F 0 "R4" V 2457 1900 50  0000 C CNN
-F 1 "22" V 2366 1900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2180 1900 50  0001 C CNN
+F 0 "R4" V 2150 1900 50  0000 C CNN
+F 1 "22" V 2250 1900 50  0000 C CNN
+F 2 "proj_local:R_0603_HandSoldering" V 2180 1900 50  0001 C CNN
 F 3 "~" H 2250 1900 50  0001 C CNN
 	1    2250 1900
 	0    1    -1   0   
@@ -179,12 +179,12 @@ Wire Wire Line
 Wire Wire Line
 	1850 1300 1800 1300
 $Comp
-L Device:Fuse F1
+L Device:Polyfuse F1
 U 1 1 5B74494F
 P 2950 1100
-F 0 "F1" V 3147 1100 50  0000 C CNN
-F 1 "Fuse" V 3056 1100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2880 1100 50  0001 C CNN
+F 0 "F1" V 3050 1100 50  0000 C CNN
+F 1 "500mA" V 2850 1100 50  0000 C CNN
+F 2 "proj_local:F_0805_HandSoldering" V 2880 1100 50  0001 C CNN
 F 3 "~" H 2950 1100 50  0001 C CNN
 	1    2950 1100
 	0    -1   -1   0   
@@ -217,8 +217,8 @@ $Comp
 L Device:D_Schottky D1
 U 1 1 5B747838
 P 2400 1100
-F 0 "D1" H 2400 884 50  0000 C CNN
-F 1 "D_Schottky" H 2400 975 50  0000 C CNN
+F 0 "D1" H 2400 1000 50  0000 C CNN
+F 1 "1A" H 2400 1200 50  0000 C CNN
 F 2 "proj_local:D_TUMD2_HandSoldering" H 2400 1100 50  0001 C CNN
 F 3 "~" H 2400 1100 50  0001 C CNN
 	1    2400 1100
@@ -250,51 +250,46 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5B74E190
-P 2450 4150
-F 0 "#PWR?" H 2450 3900 50  0001 C CNN
-F 1 "GND" H 2455 3977 50  0000 C CNN
-F 2 "" H 2450 4150 50  0001 C CNN
-F 3 "" H 2450 4150 50  0001 C CNN
-	1    2450 4150
+P 2500 4150
+F 0 "#PWR?" H 2500 3900 50  0001 C CNN
+F 1 "GND" H 2505 3977 50  0000 C CNN
+F 2 "" H 2500 4150 50  0001 C CNN
+F 3 "" H 2500 4150 50  0001 C CNN
+	1    2500 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 5B74E1CD
-P 2450 3350
-F 0 "C1" H 2565 3396 50  0000 L CNN
-F 1 "4u7" H 2565 3305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2488 3200 50  0001 C CNN
-F 3 "~" H 2450 3350 50  0001 C CNN
-	1    2450 3350
+P 2700 3350
+F 0 "C1" H 2815 3396 50  0000 L CNN
+F 1 "4u7" H 2815 3305 50  0000 L CNN
+F 2 "proj_local:C_0603_HandSoldering" H 2738 3200 50  0001 C CNN
+F 3 "~" H 2700 3350 50  0001 C CNN
+	1    2700 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L Device:C C3
 U 1 1 5B74E21E
-P 2200 3350
-F 0 "C2" H 2315 3396 50  0000 L CNN
-F 1 "0u1" H 2315 3305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2238 3200 50  0001 C CNN
-F 3 "~" H 2200 3350 50  0001 C CNN
-	1    2200 3350
+P 2300 3350
+F 0 "C3" H 2415 3396 50  0000 L CNN
+F 1 "0u1" H 2415 3305 50  0000 L CNN
+F 2 "proj_local:C_0603_HandSoldering" H 2338 3200 50  0001 C CNN
+F 3 "~" H 2300 3350 50  0001 C CNN
+	1    2300 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 3500 2200 3550
+	2300 3500 2300 3550
 Wire Wire Line
-	2200 3550 2450 3550
+	2700 3550 2700 3500
 Wire Wire Line
-	2450 3550 2450 3500
+	2300 3200 2300 3150
 Wire Wire Line
-	2200 3200 2200 3150
+	2700 3200 2700 3150
 Wire Wire Line
-	2450 3200 2450 3150
-Wire Wire Line
-	2200 3150 2450 3150
-Wire Wire Line
-	2450 2900 2450 3150
-Connection ~ 2450 3150
+	2500 2900 2500 3150
 Wire Wire Line
 	3900 5800 4000 5800
 Wire Wire Line
@@ -303,31 +298,26 @@ Connection ~ 4000 5800
 Wire Wire Line
 	4000 5800 4000 5400
 Wire Wire Line
-	2450 2900 2950 2900
-Connection ~ 2950 2900
-Wire Wire Line
 	2950 2900 3400 2900
 $Comp
-L Device:C C3
+L Device:C C2
 U 1 1 5B75B7EC
 P 3050 3650
-F 0 "C3" H 3165 3696 50  0000 L CNN
+F 0 "C2" H 3165 3696 50  0000 L CNN
 F 1 "1u0" H 3165 3605 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3088 3500 50  0001 C CNN
+F 2 "proj_local:C_0603_HandSoldering" H 3088 3500 50  0001 C CNN
 F 3 "~" H 3050 3650 50  0001 C CNN
 	1    3050 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 3550 2450 3950
-Connection ~ 2450 3550
+	2500 3550 2500 3950
 Wire Wire Line
 	3050 3800 3050 3950
 Wire Wire Line
-	3050 3950 2450 3950
-Connection ~ 2450 3950
+	3050 3950 2500 3950
 Wire Wire Line
-	2450 3950 2450 4150
+	2500 3950 2500 4150
 Wire Wire Line
 	3050 3500 3050 3400
 Wire Wire Line
@@ -377,15 +367,13 @@ U 1 1 5B7823F6
 P 1900 3350
 F 0 "C4" H 2015 3396 50  0000 L CNN
 F 1 "0u1" H 2015 3305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1938 3200 50  0001 C CNN
+F 2 "proj_local:C_0603_HandSoldering" H 1938 3200 50  0001 C CNN
 F 3 "~" H 1900 3350 50  0001 C CNN
 	1    1900 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1900 3500 1900 3950
-Wire Wire Line
-	1900 3950 2450 3950
 Wire Wire Line
 	1900 3200 1900 2700
 Wire Wire Line
@@ -426,9 +414,9 @@ $Comp
 L Device:R R5
 U 1 1 5B79EFA9
 P 4600 1050
-F 0 "R5" H 4670 1096 50  0000 L CNN
-F 1 "10k" H 4670 1005 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4530 1050 50  0001 C CNN
+F 0 "R5" H 4650 1050 50  0000 L CNN
+F 1 "10k" V 4600 975 50  0000 L CNN
+F 2 "proj_local:R_0603_HandSoldering" V 4530 1050 50  0001 C CNN
 F 3 "~" H 4600 1050 50  0001 C CNN
 	1    4600 1050
 	1    0    0    -1  
@@ -601,10 +589,8 @@ Wire Wire Line
 	9150 4000 9350 4000
 Text GLabel 9150 3000 0    50   BiDi ~ 0
 GND
-Text GLabel 9150 2900 0    50   BiDi ~ 0
+Text GLabel 8525 2900 0    50   BiDi ~ 0
 VBUS
-Wire Wire Line
-	9150 2900 9350 2900
 Wire Wire Line
 	9150 3000 9350 3000
 Wire Wire Line
@@ -641,7 +627,7 @@ U 1 1 5B88992C
 P 5600 1050
 F 0 "C5" H 5715 1096 50  0000 L CNN
 F 1 "0u1" H 5715 1005 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5638 900 50  0001 C CNN
+F 2 "proj_local:C_0603_HandSoldering" H 5638 900 50  0001 C CNN
 F 3 "~" H 5600 1050 50  0001 C CNN
 	1    5600 1050
 	1    0    0    -1  
@@ -649,12 +635,12 @@ $EndComp
 $Comp
 L Device:C C6
 U 1 1 5B890B04
-P 5900 1050
-F 0 "C6" H 6015 1096 50  0000 L CNN
-F 1 "0u1" H 6015 1005 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5938 900 50  0001 C CNN
-F 3 "~" H 5900 1050 50  0001 C CNN
-	1    5900 1050
+P 5950 1050
+F 0 "C6" H 6065 1096 50  0000 L CNN
+F 1 "0u1" H 6065 1005 50  0000 L CNN
+F 2 "proj_local:C_0603_HandSoldering" H 5988 900 50  0001 C CNN
+F 3 "~" H 5950 1050 50  0001 C CNN
+	1    5950 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -680,45 +666,31 @@ F 3 "" H 5600 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 1200 5600 1250
+	5950 1250 5950 1200
 Wire Wire Line
-	5600 1250 5900 1250
-Wire Wire Line
-	5900 1250 5900 1200
-Connection ~ 5600 1250
-Wire Wire Line
-	5600 1250 5600 1600
-Wire Wire Line
-	5600 800  5600 850 
-Wire Wire Line
-	5600 850  5900 850 
-Wire Wire Line
-	5900 850  5900 900 
-Connection ~ 5600 850 
-Wire Wire Line
-	5600 850  5600 900 
+	5950 850  5950 900 
 Text Label 3150 3400 0    50   ~ 0
 UCAP
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5B8BC0D0
-P 7350 1200
-F 0 "TP1" H 7408 1320 50  0000 L CNN
-F 1 "TestPoint" H 7408 1229 50  0000 L CNN
-F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 1200 50  0001 C CNN
-F 3 "~" H 7550 1200 50  0001 C CNN
-	1    7350 1200
+P 7350 850
+F 0 "TP1" H 7408 970 50  0000 L CNN
+F 1 "TestPoint" H 7408 879 50  0000 L CNN
+F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 850 50  0001 C CNN
+F 3 "~" H 7550 850 50  0001 C CNN
+	1    7350 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5B8BFFD7
-P 7350 1650
-F 0 "TP2" H 7408 1770 50  0000 L CNN
-F 1 "TestPoint" H 7408 1679 50  0000 L CNN
-F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 1650 50  0001 C CNN
-F 3 "~" H 7550 1650 50  0001 C CNN
-	1    7350 1650
+P 7350 1300
+F 0 "TP2" H 7408 1420 50  0000 L CNN
+F 1 "TestPoint" H 7408 1329 50  0000 L CNN
+F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 1300 50  0001 C CNN
+F 3 "~" H 7550 1300 50  0001 C CNN
+	1    7350 1300
 	1    0    0    -1  
 $EndComp
 Text GLabel 4750 2100 2    50   Output ~ 0
@@ -729,18 +701,18 @@ Text GLabel 4750 3800 2    50   Output ~ 0
 PD5
 Wire Wire Line
 	4600 3800 4750 3800
-Text GLabel 7100 1350 0    50   Input ~ 0
+Text GLabel 7100 1000 0    50   Input ~ 0
 PB0
 Wire Wire Line
-	7350 1350 7350 1200
+	7350 1000 7350 850 
 Wire Wire Line
-	7100 1350 7350 1350
-Text GLabel 7100 1850 0    50   Input ~ 0
+	7100 1000 7350 1000
+Text GLabel 7100 1500 0    50   Input ~ 0
 PD5
 Wire Wire Line
-	7100 1850 7350 1850
+	7100 1500 7350 1500
 Wire Wire Line
-	7350 1850 7350 1650
+	7350 1500 7350 1300
 $Comp
 L Device:Resonator X1
 U 1 1 5B775AC8
@@ -759,33 +731,117 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5B7834BD
-P 7350 2150
-F 0 "TP3" H 7408 2270 50  0000 L CNN
-F 1 "TestPoint" H 7408 2179 50  0000 L CNN
-F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 2150 50  0001 C CNN
-F 3 "~" H 7550 2150 50  0001 C CNN
-	1    7350 2150
+P 7350 1800
+F 0 "TP3" H 7408 1920 50  0000 L CNN
+F 1 "TestPoint" H 7408 1829 50  0000 L CNN
+F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 1800 50  0001 C CNN
+F 3 "~" H 7550 1800 50  0001 C CNN
+	1    7350 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 7100 2350 0    50   BiDi ~ 0
+Text GLabel 7100 2000 0    50   BiDi ~ 0
 GND
 Wire Wire Line
-	7100 2350 7350 2350
+	7100 2000 7350 2000
 Wire Wire Line
-	7350 2150 7350 2350
+	7350 1800 7350 2000
 $Comp
 L power:GND #PWR?
 U 1 1 5B791FEC
-P 5400 4400
-F 0 "#PWR?" H 5400 4150 50  0001 C CNN
-F 1 "GND" H 5405 4227 50  0000 C CNN
-F 2 "" H 5400 4400 50  0001 C CNN
-F 3 "" H 5400 4400 50  0001 C CNN
-	1    5400 4400
+P 5725 4400
+F 0 "#PWR?" H 5725 4150 50  0001 C CNN
+F 1 "GND" H 5730 4227 50  0000 C CNN
+F 2 "" H 5725 4400 50  0001 C CNN
+F 3 "" H 5725 4400 50  0001 C CNN
+	1    5725 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5B9B7411
+P 8800 2900
+F 0 "JP1" H 8800 3105 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8800 3014 50  0000 C CNN
+F 2 "proj_local:SolderJumper-2_P1.0mm_Open_RoundedPad0.7x1.0mm" H 8800 2900 50  0001 C CNN
+F 3 "~" H 8800 2900 50  0001 C CNN
+	1    8800 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 4200 5400 4200
+	8950 2900 9350 2900
 Wire Wire Line
-	5400 4200 5400 4400
+	8525 2900 8650 2900
+Text Label 9225 2900 0    50   ~ 0
+NC
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5B9C5FC0
+P 5475 3900
+F 0 "JP2" H 5475 3675 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5475 3766 50  0000 C CNN
+F 2 "proj_local:SolderJumper-2_P1.0mm_Open_RoundedPad0.7x1.0mm" H 5475 3900 50  0001 C CNN
+F 3 "~" H 5475 3900 50  0001 C CNN
+	1    5475 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5625 3900 5725 3900
+Text Label 5100 3900 0    50   ~ 0
+PD6
+Wire Wire Line
+	5725 3900 5725 4200
+Wire Wire Line
+	4600 3900 5325 3900
+Wire Wire Line
+	4600 4200 5725 4200
+Connection ~ 5725 4200
+Wire Wire Line
+	5725 4200 5725 4400
+Connection ~ 2500 3950
+Wire Wire Line
+	1900 3950 2500 3950
+Wire Wire Line
+	2500 2900 2950 2900
+Connection ~ 2950 2900
+Connection ~ 2500 3150
+Connection ~ 2500 3550
+Wire Wire Line
+	2300 3150 2500 3150
+Wire Wire Line
+	2300 3550 2500 3550
+Wire Wire Line
+	2500 3550 2700 3550
+Wire Wire Line
+	2500 3150 2700 3150
+Wire Wire Line
+	5600 1200 5600 1250
+Wire Wire Line
+	5600 800  5600 850 
+Wire Wire Line
+	5600 1250 5950 1250
+Connection ~ 5600 1250
+Wire Wire Line
+	5600 1250 5600 1600
+Wire Wire Line
+	5600 850  5950 850 
+Connection ~ 5600 850 
+Wire Wire Line
+	5600 850  5600 900 
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5BC3AF25
+P 7350 2300
+F 0 "TP4" H 7408 2420 50  0000 L CNN
+F 1 "TestPoint" H 7408 2329 50  0000 L CNN
+F 2 "proj_local:Measurement_Point_RoundSquare-TH_Tiny" H 7550 2300 50  0001 C CNN
+F 3 "~" H 7550 2300 50  0001 C CNN
+	1    7350 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 2500 0    50   BiDi ~ 0
+VCC
+Wire Wire Line
+	7100 2500 7350 2500
+Wire Wire Line
+	7350 2300 7350 2500
 $EndSCHEMATC
