@@ -1,0 +1,3 @@
+* text=auto
+.git* text eol=lf
+*.pro text eol=lf
