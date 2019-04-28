@@ -4,3 +4,4 @@
 *.kicad_pcb-bak
 **/gerber/*
 
+!*.lib
