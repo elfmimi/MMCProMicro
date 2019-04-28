@@ -1,3 +1,4 @@
 * text=auto
 .git* text eol=lf
-*.pro text eol=lf
+*.pro text eol=lf filter=kicad_project
+*.sch filter=kicad_sch
